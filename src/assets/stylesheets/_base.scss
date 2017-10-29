@@ -1,0 +1,219 @@
+body {
+  font-family: $fontRaleway !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.main-container {
+  background-color: $colorFAFA;
+  padding-bottom: 40px;
+}
+
+.header-block {
+  background-color: #041929;
+  padding: 20px 30px;
+  margin: 0 9px 20px;
+  .logged-in-out-block {
+    h4, .btn {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h4 {
+      @include font($white, 16px, 22px, 400);
+      margin-right: 15px;
+    }
+    .btn {
+      background-color: $white;
+      border-radius: 0;
+      @include font($color333, 16px, 16px, 400);
+    }
+  }
+}
+
+.add-user-container {
+  background-color: $white;
+  padding: 20px 30px;
+  .current-user-list {
+    margin: 0;
+    li {
+      border-bottom: 1px solid $colorEEE;
+      cursor: pointer;
+      padding: 10px;
+      &:nth-child(1) {
+        border-top: 1px solid $colorEEE;
+      }
+    }
+    .data-inline {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30%;
+      &:nth-child(1) {
+        width: auto;
+      }
+      label {
+        @include font($color333, 14px, 16px, 700);
+        margin-right: 10px;
+      }
+    }
+  }
+  .add-user-link {
+    padding: 5px;
+    border: 2px solid $colorRed;
+    border-radius: 2px;
+    width: 110px;
+    cursor: pointer;
+    margin: 20px 0 0;
+    i, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    i {
+      color: $colorRed;
+      font-size: 29px;
+    }
+    span {
+      @include font($colorRed, 14px, 16px, 700);
+    }
+  }
+}
+
+.add-user-form {
+  margin-top: 40px;
+  .add-user-btn {
+    padding: 12px;
+    background-color: $colorRed;
+    @include font($white, 14px, 16px, 500);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.form-group {
+  height: 64px;
+  .form-control {
+    border: 1px solid $colorEEE;
+    border-radius: 0;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    &:focus {
+      cursor: default;
+      border: 1px solid $color333;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+  .generate-id-block {
+    border: 1px solid $colorEEE;
+    padding: 8px 10px;
+    // margin-bottom: 15px;
+    height: 40px;
+    @include font($color333, 14px, 16px, 300);
+    span {
+      &:nth-child(1) {
+        @include font($color333, 14px, 16px, 500);
+        margin: 2px 0;
+      }
+      &:nth-child(2) {
+        cursor: pointer;
+        background-color: $color333;
+        padding: 4px;
+        @include font($white, 12px, 16px, 500);
+      }
+    }
+    .errorMsg {
+      margin: 12px 0 0 -12px;
+    }
+  }
+}
+
+.pwdFormat {
+  @include font($colorAAA, 12px, 14px, 500);
+}
+
+.errorMsg {
+  display: inline-block;
+  @include font($colorRed, 12px, 14px, 500);
+}
+
+.login-form {
+  margin-top: 40px;
+  background-color: $white;
+  padding: 30px 30px;
+  .login-btn {
+    display: block;
+    background-color: $color333;
+    width: 100px;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-radius: 0;
+    @include font($white, 16px, 18px, 300);
+    &:hover {
+      color: $white;
+    }
+  }
+  .errorMsg {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.userDetails-block {
+  background-color: $white;
+  padding: 30px 0;
+  h3 {
+    @include font($color333, 24px, 26px, 400);
+    margin-bottom: 20px;
+  }
+  label {
+    @include font($colorAAA, 16px, 18px, 400);
+  }
+}
+
+.back-btn {
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+
+.my-profile-container {
+  background-color: $white;
+  width: calc(66.66666667% - 16px);
+  padding: 0 0 30px;
+  h3 {
+    @include font($color333, 24px, 26px, 400);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .update-success {
+    text-align: center;
+    @include font($colorBlue, 16, 18px, 400);
+  }
+  .edit-btn {
+    display: block;
+    background-color: $color333;
+    width: 100px;
+    margin: 10px auto;
+    padding: 8px 0;
+    border-radius: 0;
+    @include font($white, 16px, 18px, 300);
+    &:hover {
+      color: $white;
+    }
+  }
+}
