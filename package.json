@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
+    "postinstall": "webpack -p --config webpack.prod.config.js --history-api-fallback",
     "build": "webpack -p"
   },
   "keywords": [],
